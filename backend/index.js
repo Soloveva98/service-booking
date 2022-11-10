@@ -10,7 +10,7 @@ import * as RoomsController from './controllers/RoomsController.js';
 const router = express.Router();
 
 
-mongoose.connect('mongodb://localhost:27017/booking')
+mongoose.connect(process.env.MONGODB_URI)
 	.then(() => console.log('DB OK'))
 	.catch((err) => console.log('DB error', err));
 
