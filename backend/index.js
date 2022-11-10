@@ -23,7 +23,7 @@ app.use(express.json());
 
 //отключаем блокировку корс при запросах - разрешаем делать запрос откуда угодно
 app.use(cors());
-app.use('/static', express.static(__dirname + '/public'));
+app.use(express.static('./build'));
 
 
 app.use("/", router);
