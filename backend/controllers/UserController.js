@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
 	secure: true,
 	auth: {
 		user: 'devdevovich1@gmail.com',
-		pass: process.env.REACT_APP_PASS_APP,
+		pass: process.env.PASS_APP,
 	},
 });
 
@@ -28,7 +28,7 @@ let transporter = nodemailer.createTransport({
 //проверка капчи
 async function validateCaptcha(tokenCaptcha) {
 	const response = await fetch(
-		`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${tokenCaptcha}`,
+		`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${tokenCaptcha}`,
 		{
 			method: "POST",
 		}

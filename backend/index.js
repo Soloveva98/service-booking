@@ -6,11 +6,11 @@ import checkAuth from './utils/checkAuth.js';//ипортируем провер
 import * as UserController from './controllers/UserController.js';
 import * as RoomsController from './controllers/RoomsController.js';
 
-const url = 'mongodb://localhost:27017/booking';
+//const url = 'mongodb://localhost:27017/booking';
 const router = express.Router();
 
 
-mongoose.connect(url)
+mongoose.connect(process.env.MONGODB_URI)
 	.then(() => console.log('DB OK'))
 	.catch((err) => console.log('DB error', err));
 
