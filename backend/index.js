@@ -17,11 +17,14 @@ mongoose.connect(process.env.MONGODB_URI)
 //создали експрес приложение
 const app = express();
 
+
 //нужно научить наше приложение читать json
 app.use(express.json());
 
 //отключаем блокировку корс при запросах - разрешаем делать запрос откуда угодно
 app.use(cors());
+app.use('/static', express.static(__dirname + '/public'));
+
 
 app.use("/", router);
 
