@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/service-booking/static/css/main.ef338b00.css",
+    "main.js": "/service-booking/static/js/main.53f05c78.js",
+    "static/js/787.313f0b43.chunk.js": "/service-booking/static/js/787.313f0b43.chunk.js",
+    "static/media/24.jpg": "/service-booking/static/media/24.ebd871bd3facacdecb70.jpg",
+    "static/media/name.svg": "/service-booking/static/media/name.c889a3aad6739d455040.svg",
+    "static/media/email.svg": "/service-booking/static/media/email.ee63919a4590a6cd9951.svg",
+    "static/media/email_form.svg": "/service-booking/static/media/email_form.31c47e2074cde258f209.svg",
+    "static/media/phonelk.svg": "/service-booking/static/media/phonelk.488b119299a56d8281b9.svg",
+    "static/media/phone_footer.svg": "/service-booking/static/media/phone_footer.06d3580310fb808a9349.svg",
+    "static/media/phone.svg": "/service-booking/static/media/phone.f12dc823c662f0e0bfb1.svg",
+    "index.html": "/service-booking/index.html",
+    "static/media/arrow-left.svg": "/service-booking/static/media/arrow-left.27df1a6e3b0311849ed4.svg",
+    "static/media/arrow-right.svg": "/service-booking/static/media/arrow-right.3a26cc8c2094350774c6.svg",
+    "main.ef338b00.css.map": "/service-booking/static/css/main.ef338b00.css.map",
+    "main.53f05c78.js.map": "/service-booking/static/js/main.53f05c78.js.map",
+    "787.313f0b43.chunk.js.map": "/service-booking/static/js/787.313f0b43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef338b00.css",
+    "static/js/main.53f05c78.js"
+  ]
+}
