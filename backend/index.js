@@ -7,7 +7,7 @@ import * as UserController from './controllers/UserController.js';
 import * as RoomsController from './controllers/RoomsController.js';
 
 //const url = 'mongodb://localhost:27017/booking';
-//const router = express.Router();
+const router = express.Router();
 
 
 mongoose.connect('mongodb://localhost:27017/booking')
@@ -26,7 +26,7 @@ app.use(cors());
 app.use(express.static('./build'));
 
 
-//app.use("/", router);
+app.use("/", router);
 
 //ЗАПРОСЫ
 //1 - Запросы, связанные с регистрацией и авторизацией
