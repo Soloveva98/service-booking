@@ -1,0 +1,230 @@
+@import "./../../vars";
+
+.room{
+	width: 100%;
+	height: 100%;
+	padding-top: 65px;
+	color: rgb(95, 93, 93);
+	&__inner{
+		width: 100%;
+		padding: 25px 25px 100px;
+		display: flex;
+	}
+	&__slider{
+		width: 60%;
+		padding: 0 25px;
+		margin-right: 10px;
+	}
+	&__img{
+		height: 464px;
+	}
+	&__info{
+		width: 40%;
+		font-size: 18px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		display: flex;
+		flex-direction: column;
+	}
+	&__header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 20px;
+		font-weight: 600;
+		color: $color-main;
+		margin-bottom: 30px;
+	}
+	&__characteristics{
+		margin-bottom: 20px;
+		text-align: right;
+		color: $color-main;
+		font-weight: 600;
+		line-height: 1.5;
+		font-size: 18px;
+	}
+	&__description{
+		flex: 1 1 auto;
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+	&__contact{
+		left: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		& span{
+			display: block;
+			color: $color-main;
+			margin-right: 8px;
+			line-height: 1.2;
+			font-size: 16px;
+		}
+		& button {
+			font-size: 11px;
+			padding: 7px 15px;
+			border: 2px solid $color-main;
+			border-radius: 30px;
+			background-color: $color-main;
+			color: #fff;
+			letter-spacing: 2px;
+			font-weight: 600;
+			text-transform: uppercase;
+			&:hover{
+				box-shadow: 1px 1px 3px 1px rgb(175, 171, 171);
+			}
+			&:active{
+				transform: translate(1px, 1px);
+				color: $color-main;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 980px) {
+	.room{
+		padding-top: 15px;
+		&__slider{
+			padding: 0 30px;
+		}
+		&__img{
+			height: 320px;
+		}
+		&__info{
+			font-size: 16px;
+		}
+		&__header{
+			font-size: 17px;
+			margin-bottom: 20px;
+		}
+		&__characteristics{
+			margin-bottom: 15px;
+			font-size: 16px;
+		}
+		&__contact{
+			& span {
+				font-size: 15px;
+			}
+			& button {
+				font-size: 10px;
+				padding: 5px 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.room{
+		padding-top: 0;
+		&__inner{
+			display: block;
+		}
+		&__img{
+			height: 320px;
+		}
+		&__slider{
+			width: 100%;
+			padding: 0;
+		}
+		&__info{
+			width: 100%;
+			margin-top: 120px;
+			padding: 0;
+		}
+		&__header{
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+		&__characteristics{
+			margin-bottom: 20px;
+		}
+		&__description{
+			margin-bottom: 30px;
+		}
+		&__contact{
+			& span{
+				margin-right: 15px;
+			}
+			& button {
+				font-size: 13px;
+				padding: 5px 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 595px) {
+	.room{
+		&__inner{
+			padding: 25px 25px 30px;
+		}
+		&__img{
+			height: 250px;
+		}
+		&__info{
+			width: 100%;
+			margin-top: 20px;
+		}
+		&__header{
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		&__characteristics{
+			margin-bottom: 15px;
+		}
+		&__description{
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		&__contact{
+			& span {
+				font-size: 14px;
+			}
+			& button {
+				font-size: 11px;
+				padding: 5px 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.room{
+		&__inner{
+			padding: 10px;
+		}
+		&__img{
+			height: 175px;
+		}
+		&__info{
+			margin-top: 10px;
+		}
+		&__header{
+			display: block;
+			text-align: center;
+			margin-bottom: 5px;
+			font-size: 15px;
+			& p {
+				margin-bottom: 10px;
+			}
+		}
+		&__characteristics{
+			text-align: center;
+			font-size: 13px;
+		}
+		&__description{
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+		&__contact{
+			& span {
+				font-size: 12px;
+			}
+			& button {
+				font-size: 8px;
+				padding: 2px 4px;
+			}
+		}
+	}
+}

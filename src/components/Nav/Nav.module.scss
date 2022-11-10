@@ -1,0 +1,51 @@
+@import "./../../vars";
+
+.nav__items{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav__item{
+	background-color: transparent;
+	font-size: 18px;
+	margin-right: 50px;
+	letter-spacing: 2px;
+	color: #fff;
+	&:last-child{
+		margin-right: 0;
+	}
+	&:hover{
+		transform: translate(0, 1px);
+		transition: 0.3s;
+	}
+}
+
+@media (max-width: 1000px) {
+	.nav__items{
+		justify-content: center;
+	}
+	.nav__item{
+		font-size: 16px;
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 810px) {
+	.nav__item{
+		font-size: 14px;
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 595px) {
+	.nav__items{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav__item{
+		margin-right: 0;
+		font-size: 16px;
+	}
+}

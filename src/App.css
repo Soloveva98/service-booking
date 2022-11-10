@@ -1,0 +1,46 @@
+@import url('./_nullstyle.css');
+@import url('./_slider.scss');
+@import url('./_form.css');
+
+
+.App{
+	min-width: 250px;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 12fr);
+	grid-template-rows: 62px auto 44px;
+	grid-template-areas: 
+								"H"
+								"M"
+								"F";
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 0;
+	font-family: 'Vollkorn', serif;
+}
+
+.header{
+	grid-area: H;
+	grid-column: 1 / -1;
+}
+
+.main{
+	grid-area: M;
+	grid-column: 1 / -1;
+}
+
+.footer{
+	grid-area: F;
+	background-color: #D07E2A;
+	grid-column: 1 / -1;
+}
+
+@media (max-width: 530px) {
+	.App{
+		grid-template-rows: 50px auto 150px;
+	}
+}

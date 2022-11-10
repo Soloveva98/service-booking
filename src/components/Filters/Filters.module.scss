@@ -1,0 +1,66 @@
+@import "./../../vars";
+
+.filters__item{
+	margin-bottom: 20px;
+	color: $color-main;
+	font-size: 16px;
+	& input{
+		padding: 5px 7px;
+		width: 60px;
+		border: 1px solid $color-main;
+	}
+}
+
+.filter{
+	margin-bottom: 20px;
+}
+
+.input{
+	font-size: 14px;
+	& input{
+		margin-bottom: 15px;
+		border-radius: 3px;
+		&::placeholder{
+			color: rgb(83, 82, 82);
+		}
+	}
+}
+
+
+@media (max-width: 595px) {
+	.filters__inner{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.filters__item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0;
+	}
+	
+	.filter{
+		margin-bottom: 0;
+		margin-right: 15px;
+	}
+	
+	.input{
+		& input{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+@media (max-width: 434px) {
+	.filters__inner{
+		flex-direction: column;
+	}
+	.filters__item{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

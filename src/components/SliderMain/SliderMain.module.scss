@@ -1,0 +1,39 @@
+@import "./../../vars";
+@import "./../../slider";
+
+.slider__inner{
+	max-width: 1200px;
+	height: 225px;
+	overflow: hidden;
+	& img{
+		display: block;
+		height: 225px;
+	}
+};
+
+@media (max-width: 768px) {
+	.slider__inner{
+		height: 200px;
+		& img{
+			height: 200px;
+		}
+	};
+}
+
+@media (max-width: 635px) {
+	.slider__inner{
+		height: 170px;
+		& img{
+			height: 170px;
+		}
+	};
+}
+
+@media (max-width: 380px) {
+	.slider__inner{
+		height: 110px;
+		& img{
+			height: 110px;
+		}
+	};
+}

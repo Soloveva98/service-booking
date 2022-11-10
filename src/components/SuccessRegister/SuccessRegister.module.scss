@@ -1,0 +1,98 @@
+@import '..//..//vars';
+
+.success{
+	padding: 30px 10px;
+	max-width: 500px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $color-main;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	box-shadow: 1px 1px 3px 1px grey;
+	text-align: center;
+	line-height: 1.5;
+	& h3{
+		margin-top: 25px;
+		font-weight: 600;
+	}
+	& p {
+		margin-top: 20px;
+		text-align: center;
+		line-height: 2;
+	}
+	& button{
+		margin-top: 20px;
+		background-color: transparent;
+		color: $color-main;
+		font-size: 20px;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px 3px grey;
+		&:hover{
+			padding: 4px 20px;
+			border: 2px solid #24a319;
+			border-radius: 30px;
+			background-color: #24a319;
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			transition: 0.5s;
+		}
+		&:active{
+			background-color: #fff;
+			color: #24a319;
+		}
+	}
+}
+
+
+@media (max-width: 680px) {
+	.success{
+		height: 250px;
+		font-size: 16px;
+		& img{
+			width: 50px;
+		}
+		& h3{
+			margin-top: 20px;
+		}
+		& p {
+			margin-top: 10px;
+		}
+		& button{
+			margin-top: 10px;
+			font-size: 16px;
+			&:hover{
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.success{
+		padding: 20px 10px;
+		height: 205px;
+		font-size: 11px;
+		& img{
+			width: 40px;
+		}
+		& h3{
+			margin-top: 15px;
+		}
+		& p {
+			margin-top: 5px;
+			line-height: 1.5;
+		}
+		& button{
+			margin-top: 10px;
+			font-size: 11px;
+			&:hover{
+				padding: 4px 10px;
+				font-size: 10px;
+			}
+		}
+	}
+	
+}

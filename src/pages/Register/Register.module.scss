@@ -1,0 +1,43 @@
+@import '../../vars';
+
+.register{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom left, #FFFFFF 57%, #D07E2A 98%);
+	&__form{
+		width: 100%;
+		max-width: 560px;
+		padding: 80px 30px 30px;
+		margin: 0 150px 0 auto;
+	}
+}
+
+.recaptcha{
+	transform: scale(0.85);
+	transform-origin: left top;
+}
+
+@media (max-width: 880px) {
+	.register{
+		&__form{
+			margin: 0 auto 0;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.register{
+		&__form{
+			padding-top: 80px;
+		}
+	}
+	.recaptcha{
+		transform: scale(0.8);
+	}
+}
+
+@media (max-width: 530px) {
+	.recaptcha{
+		transform: scale(0.7);
+	}
+}

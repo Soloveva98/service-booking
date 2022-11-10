@@ -1,0 +1,115 @@
+@import "./../../vars";
+
+.card{
+	width: 300px;
+	height: 400px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	box-shadow: 1px 1px 3px 1px rgb(175, 171, 171);
+	color: rgb(95, 93, 93);
+	display: flex;
+	flex-direction: column;
+	transition: 0.2s;
+	&:hover{
+		box-shadow: 1px 1px 7px 3px rgb(175, 171, 171);
+	}
+	&__img{
+		width: 100%;
+		background-color: rgb(175, 171, 171);
+		& img {
+			display: block;
+			width: 100%;
+			height: 200px;
+		}
+	}
+	&__info{
+		padding: 10px 15px;
+		display: flex;
+		flex-direction: column;
+		font-family:'Segoe UI', sans-serif;
+		font-size: 15px;
+	}
+	&__title{
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 20px;
+		color: $color-main;
+		transition: 0.5s;
+		&:hover{
+			text-shadow: 1px 1px 2px rgb(175, 171, 171);
+		}
+	}
+	&__price{
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: 600;
+		color: $color-main;
+	}
+	&__preview{
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	&__square{
+		font-weight: 600;
+		margin-bottom: 10px;
+		color: $color-main;
+	}
+}
+
+@media (max-width: 1115px) {
+	.card{
+		width: 250px;
+		height: 420px;
+		&__preview{
+			line-height: 1.5;
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.card{
+		width: 300px;
+	}
+}
+
+@media (max-width: 780px) {
+	.card{
+		width: 250px;
+		height: 420px;
+	}
+}
+
+@media (max-width: 680px) {
+	.card{
+		width: 208px;
+		height: auto;
+		margin-bottom: 30px;
+		&__img{
+			& img {
+				height: 170px;
+			}
+		}
+		&__info{
+			font-size: 14px;
+		}
+		&__title{
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		&__price{
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+		&__preview{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 595px) {
+	.card{
+		width: 240px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
