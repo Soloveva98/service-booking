@@ -6,7 +6,6 @@ import checkAuth from './utils/checkAuth.js';//ипортируем провер
 import * as UserController from './controllers/UserController.js';
 import * as RoomsController from './controllers/RoomsController.js';
 
-//const url = 'mongodb://localhost:27017/booking';
 const router = express.Router();
 
 
